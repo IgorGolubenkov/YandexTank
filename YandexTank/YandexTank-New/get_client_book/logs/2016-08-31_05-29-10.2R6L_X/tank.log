@@ -1,0 +1,210 @@
+2016-08-31 05:29:09,581 [WARNING] yandextank.core.consoleworker consoleworker.py:164	/etc/yandex-tank is not accessible to get configs list
+2016-08-31 05:29:09,581 [INFO] yandextank.core.consoleworker consoleworker.py:199	No config passed via cmdline, using ./load.ini
+2016-08-31 05:29:09,582 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=True): /var/loadtest/load.ini
+2016-08-31 05:29:09,582 [INFO] yandextank.core.tankcore tankcore.py:59	Loading configs...
+2016-08-31 05:29:09,582 [DEBUG] yandextank.core.tankcore tankcore.py:472	Reading configs: ['/usr/local/lib/python2.7/dist-packages/yandextank/core/config/00-base.ini', '/root/.yandex-tank', '/var/loadtest/load.ini']
+2016-08-31 05:29:09,584 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: '' options:
+[('uuid', '9d419455-9b1c-42b5-aa84-8b604ef1b7a4'), ('pid', '1'), ('lock_dir', '/var/lock'), ('plugin_rcheck', 'yandextank.plugins.ResourceCheck'), ('plugin_shellexec', 'yandextank.plugins.ShellExec'), ('plugin_phantom', ''), ('plugin_aggregate', 'yandextank.plugins.Aggregator'), ('plugin_autostop', 'yandextank.plugins.Autostop'), ('plugin_monitoring', 'yandextank.plugins.Monitoring'), ('plugin_console', 'yandextank.plugins.Console'), ('plugin_tips', 'yandextank.plugins.TipsAndTricks'), ('plugin_rcassert', 'yandextank.plugins.RCAssert'), ('artifacts_base_dir', 'logs'), ('plugin_bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:29:09,584 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=False): /var/lock/lunapark_udKweO.lock
+2016-08-31 05:29:09,585 [INFO] yandextank.core.tankcore tankcore.py:78	Loading plugins...
+2016-08-31 05:29:09,585 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: 'plugin_' options:
+[('rcheck', 'yandextank.plugins.ResourceCheck'), ('shellexec', 'yandextank.plugins.ShellExec'), ('phantom', ''), ('aggregate', 'yandextank.plugins.Aggregator'), ('autostop', 'yandextank.plugins.Autostop'), ('monitoring', 'yandextank.plugins.Monitoring'), ('console', 'yandextank.plugins.Console'), ('tips', 'yandextank.plugins.TipsAndTricks'), ('rcassert', 'yandextank.plugins.RCAssert'), ('bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:29:09,585 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2016-08-31 05:29:09,592 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin shellexec from yandextank.plugins.ShellExec
+2016-08-31 05:29:09,593 [DEBUG] yandextank.core.tankcore tankcore.py:92	Seems the plugin 'phantom' was disabled
+2016-08-31 05:29:09,593 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin aggregate from yandextank.plugins.Aggregator
+2016-08-31 05:29:10,001 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin autostop from yandextank.plugins.Autostop
+2016-08-31 05:29:10,006 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin monitoring from yandextank.plugins.Monitoring
+2016-08-31 05:29:10,022 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin console from yandextank.plugins.Console
+2016-08-31 05:29:10,022 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin tips from yandextank.plugins.TipsAndTricks
+2016-08-31 05:29:10,022 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcassert from yandextank.plugins.RCAssert
+2016-08-31 05:29:10,023 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin bfg from yandextank.plugins.Bfg
+2016-08-31 05:29:10,115 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2016-08-31 05:29:10,116 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: git
+2016-08-31 05:29:10,136 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: hg
+2016-08-31 05:29:10,175 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: svn
+2016-08-31 05:29:10,175 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: bzr
+2016-08-31 05:29:10,193 [INFO] yandextank.core.interfaces plugin.py:25	Initialized BFG
+2016-08-31 05:29:10,193 [DEBUG] yandextank.core.tankcore tankcore.py:119	Plugin instances: [<yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>, <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>, <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>, <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>, <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>, <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>, <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>, <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>, <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>]
+2016-08-31 05:29:10,194 [INFO] yandextank.core.consoleworker consoleworker.py:258	Performing test
+2016-08-31 05:29:10,195 [INFO] yandextank.core.tankcore tankcore.py:128	Configuring plugins...
+2016-08-31 05:29:10,195 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>
+2016-08-31 05:29:10,195 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcheck', adding
+2016-08-31 05:29:10,196 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>
+2016-08-31 05:29:10,196 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'shellexec', adding
+2016-08-31 05:29:10,198 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>
+2016-08-31 05:29:10,201 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'aggregator', adding
+2016-08-31 05:29:10,201 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>
+2016-08-31 05:29:10,202 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:29:10,202 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'autostop', adding
+2016-08-31 05:29:10,202 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>
+2016-08-31 05:29:10,203 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2016-08-31 05:29:10,203 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>
+2016-08-31 05:29:10,204 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'console', adding
+2016-08-31 05:29:10,204 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:29:10,205 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>
+2016-08-31 05:29:10,205 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'tips', adding
+2016-08-31 05:29:10,206 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>
+2016-08-31 05:29:10,206 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcassert', adding
+2016-08-31 05:29:10,207 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>
+2016-08-31 05:29:10,208 [INFO] yandextank.core.interfaces plugin.py:46	Configuring BFG...
+2016-08-31 05:29:10,208 [INFO] yandextank.stepper.main main.py:136	Configuring StepperWrapper...
+2016-08-31 05:29:10,208 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammofile = load_test_ammo.log
+2016-08-31 05:29:10,208 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_type = caseline
+2016-08-31 05:29:10,209 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.loop = -1
+2016-08-31 05:29:10,209 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_limit = -1
+2016-08-31 05:29:10,209 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.rps_schedule = line(1,10,10m)
+2016-08-31 05:29:10,210 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances_schedule = 
+2016-08-31 05:29:10,210 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances = 1
+2016-08-31 05:29:10,210 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.uris = 
+2016-08-31 05:29:10,211 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.headers = 
+2016-08-31 05:29:10,211 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.header_http = 1.0
+2016-08-31 05:29:10,211 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.autocases = 0
+2016-08-31 05:29:10,212 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.enum_ammo = False
+2016-08-31 05:29:10,212 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.use_caching = 1
+2016-08-31 05:29:10,212 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.file_cache = 8192
+2016-08-31 05:29:10,213 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.force_stepping = 0
+2016-08-31 05:29:10,213 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.stpd_file = 
+2016-08-31 05:29:10,213 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.chosen_cases = 
+2016-08-31 05:29:10,214 [INFO] yandextank.core.tankcore tankcore.py:140	Preparing test...
+2016-08-31 05:29:10,214 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>
+2016-08-31 05:29:10,214 [INFO] yandextank.core.interfaces plugin.py:37	Checking tank resources...
+2016-08-31 05:29:10,214 [DEBUG] yandextank.core.util util.py:422	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs logs | tail -n 1 | awk '{print \$4}' "
+2016-08-31 05:29:10,297 [DEBUG] yandextank.core.util util.py:444	Process output:
+181892
+
+2016-08-31 05:29:10,298 [DEBUG] yandextank.core.util util.py:446	Process exit code: 0
+2016-08-31 05:29:10,299 [DEBUG] root plugin.py:56	Result: (0, '181892\n', '')
+2016-08-31 05:29:10,300 [DEBUG] yandextank.core.interfaces plugin.py:62	Disk free space: 181892/2048
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.interfaces plugin.py:72	Memory free: 2643/512
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.interfaces plugin.py:81	Criterion objects: {}
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Phantom.plugin.Plugin'>
+2016-08-31 05:29:10,301 [DEBUG] yandextank.plugins.Monitoring.plugin plugin.py:103	Phantom plugin not found: "Requested plugin type not found: <class 'yandextank.plugins.Phantom.plugin.Plugin'>"
+2016-08-31 05:29:10,302 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:113	Monitoring has been disabled
+2016-08-31 05:29:10,302 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>
+2016-08-31 05:29:10,302 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>
+2016-08-31 05:29:10,302 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:29:10,302 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>
+2016-08-31 05:29:10,302 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>
+2016-08-31 05:29:10,303 [INFO] yandextank.core.interfaces plugin.py:51	Installing with PIP: []
+2016-08-31 05:29:10,303 [INFO] yandextank.core.interfaces plugin.py:58	BFG using ammo type caseline
+2016-08-31 05:29:10,303 [DEBUG] yandextank.stepper.main main.py:254	stpd-hash source: cache version 6||-1|-1|line(1,10,10m)|0|||1.0||False|caseline|/var/loadtest/load_test_ammo.log;33204;1313845;2067;1;1000;1000;22;1472621318.63
+2016-08-31 05:29:10,303 [DEBUG] yandextank.stepper.main main.py:263	Generated cache file name: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:29:10,306 [INFO] yandextank.stepper.main main.py:285	Making stpd-file: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:29:10,306 [DEBUG] yandextank.stepper.info info.py:43	Published 1 to instances
+2016-08-31 05:29:10,306 [DEBUG] yandextank.stepper.info info.py:43	Published ['line(1,10,10m)'] to loadscheme
+2016-08-31 05:29:10,307 [DEBUG] yandextank.stepper.info info.py:43	Published 600 to duration
+2016-08-31 05:29:10,308 [DEBUG] yandextank.stepper.info info.py:43	Published [(1, 67), (2, 67), (3, 66), (4, 67), (5, 67), (6, 66), (7, 67), (8, 67), (9, 66), (10, 1)] to steps
+2016-08-31 05:29:10,308 [INFO] yandextank.stepper.config config.py:117	Using CaseLineReader ammo reader
+2016-08-31 05:29:10,308 [DEBUG] yandextank.core.resource resource.py:101	Resource load_test_ammo.log format detected: None.
+2016-08-31 05:29:10,341 [DEBUG] yandextank.stepper.main main.py:279	Saving stepper info: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd_si.json
+2016-08-31 05:29:10,346 [INFO] yandextank.core.consoleworker consoleworker.py:299	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 262, in perform_test
+    self.core.plugins_prepare_test()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 144, in plugins_prepare_test
+    plugin.prepare_test()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Bfg/plugin.py", line 62, in prepare_test
+    self.gun = self.gun_classes[gun_type](self.core)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Bfg/guns.py", line 234, in __init__
+    fp, pathname, description)
+  File "/var/loadtest/scenario.py", line 36, in <module>
+    test_case['login_array'] = read_file(test_case['name_file'])
+  File "/var/loadtest/scenario.py", line 29, in read_file
+    for login in open(file_path, "r").readlines():
+IOError: [Errno 2] No such file or directory: '/var/loadtest/data/1_login.txt'
+
+2016-08-31 05:29:10,347 [ERROR] yandextank.core.consoleworker consoleworker.py:301	[Errno 2] No such file or directory: '/var/loadtest/data/1_login.txt'
+2016-08-31 05:29:10,347 [INFO] yandextank.core.consoleworker consoleworker.py:248	Trying to shutdown gracefully...
+2016-08-31 05:29:10,347 [INFO] yandextank.core.tankcore tankcore.py:188	Finishing test...
+2016-08-31 05:29:10,347 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>
+2016-08-31 05:29:10,347 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,347 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,347 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>
+2016-08-31 05:29:10,347 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,348 [ERROR] yandextank.core.tankcore tankcore.py:198	Failed finishing plugin <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>: 'Plugin' object has no attribute 'drain'
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:200	Failed finishing plugin: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 195, in plugins_end_test
+    plugin.end_test(retcode)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Aggregator/plugin.py", line 127, in end_test
+    if self.drain:
+AttributeError: 'Plugin' object has no attribute 'drain'
+
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,348 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,349 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:158	Finishing monitoring
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:29:10,349 [ERROR] yandextank.core.tankcore tankcore.py:198	Failed finishing plugin <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>: 'Plugin' object has no attribute 'bfg'
+2016-08-31 05:29:10,349 [DEBUG] yandextank.core.tankcore tankcore.py:200	Failed finishing plugin: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 195, in plugins_end_test
+    plugin.end_test(retcode)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Bfg/plugin.py", line 113, in end_test
+    if self.bfg.running():
+AttributeError: 'Plugin' object has no attribute 'bfg'
+
+2016-08-31 05:29:10,350 [INFO] yandextank.core.tankcore tankcore.py:212	Post-processing test...
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,350 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:29:10,351 [DEBUG] yandextank.core.tankcore tankcore.py:251	Collecting artifacts
+2016-08-31 05:29:10,352 [INFO] yandextank.core.tankcore tankcore.py:264	Artifacts dir: logs/2016-08-31_05-29-10.2R6L_X
+2016-08-31 05:29:10,353 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: tank.log to logs/2016-08-31_05-29-10.2R6L_X/tank.log
+2016-08-31 05:29:10,353 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/lock/lunapark_udKweO.lock to logs/2016-08-31_05-29-10.2R6L_X/lunapark_udKweO.lock
+2016-08-31 05:29:10,353 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/loadtest/load.ini to logs/2016-08-31_05-29-10.2R6L_X/load.ini
+2016-08-31 05:29:10,353 [INFO] yandextank.core.consoleworker consoleworker.py:251	Done graceful shutdown
+2016-08-31 05:29:10,353 [INFO] yandextank.core.tankcore tankcore.py:450	Close allocated resources...
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7ff5d572d450>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7ff5d5745550>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7ff5d5745c10>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Autostop.plugin.Plugin object at 0x7ff5c71fcd10>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7ff5c6f988d0>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Console.plugin.Plugin object at 0x7ff5c6d187d0>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7ff5c6d18950>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7ff5c6d18bd0>
+2016-08-31 05:29:10,354 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Bfg.plugin.Plugin object at 0x7ff5c6d18c50>
+2016-08-31 05:29:10,354 [INFO] yandextank.core.consoleworker consoleworker.py:309	Done performing test with code 1

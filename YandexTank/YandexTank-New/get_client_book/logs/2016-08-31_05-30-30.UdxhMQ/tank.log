@@ -1,0 +1,2198 @@
+2016-08-31 05:30:18,931 [WARNING] yandextank.core.consoleworker consoleworker.py:164	/etc/yandex-tank is not accessible to get configs list
+2016-08-31 05:30:18,931 [INFO] yandextank.core.consoleworker consoleworker.py:199	No config passed via cmdline, using ./load.ini
+2016-08-31 05:30:18,931 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=True): /var/loadtest/load.ini
+2016-08-31 05:30:18,932 [INFO] yandextank.core.tankcore tankcore.py:59	Loading configs...
+2016-08-31 05:30:18,932 [DEBUG] yandextank.core.tankcore tankcore.py:472	Reading configs: ['/usr/local/lib/python2.7/dist-packages/yandextank/core/config/00-base.ini', '/root/.yandex-tank', '/var/loadtest/load.ini']
+2016-08-31 05:30:18,932 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: '' options:
+[('uuid', 'c4933f83-1b73-49a8-8bec-3eedb6243ab3'), ('pid', '1'), ('lock_dir', '/var/lock'), ('plugin_rcheck', 'yandextank.plugins.ResourceCheck'), ('plugin_shellexec', 'yandextank.plugins.ShellExec'), ('plugin_phantom', ''), ('plugin_aggregate', 'yandextank.plugins.Aggregator'), ('plugin_autostop', 'yandextank.plugins.Autostop'), ('plugin_monitoring', 'yandextank.plugins.Monitoring'), ('plugin_console', 'yandextank.plugins.Console'), ('plugin_tips', 'yandextank.plugins.TipsAndTricks'), ('plugin_rcassert', 'yandextank.plugins.RCAssert'), ('artifacts_base_dir', 'logs'), ('plugin_bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:30:18,933 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=False): /var/lock/lunapark_BbeuXc.lock
+2016-08-31 05:30:18,933 [INFO] yandextank.core.tankcore tankcore.py:78	Loading plugins...
+2016-08-31 05:30:18,934 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: 'plugin_' options:
+[('rcheck', 'yandextank.plugins.ResourceCheck'), ('shellexec', 'yandextank.plugins.ShellExec'), ('phantom', ''), ('aggregate', 'yandextank.plugins.Aggregator'), ('autostop', 'yandextank.plugins.Autostop'), ('monitoring', 'yandextank.plugins.Monitoring'), ('console', 'yandextank.plugins.Console'), ('tips', 'yandextank.plugins.TipsAndTricks'), ('rcassert', 'yandextank.plugins.RCAssert'), ('bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:30:18,934 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2016-08-31 05:30:18,934 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin shellexec from yandextank.plugins.ShellExec
+2016-08-31 05:30:18,935 [DEBUG] yandextank.core.tankcore tankcore.py:92	Seems the plugin 'phantom' was disabled
+2016-08-31 05:30:18,935 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin aggregate from yandextank.plugins.Aggregator
+2016-08-31 05:30:19,127 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin autostop from yandextank.plugins.Autostop
+2016-08-31 05:30:19,129 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin monitoring from yandextank.plugins.Monitoring
+2016-08-31 05:30:19,137 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin console from yandextank.plugins.Console
+2016-08-31 05:30:19,137 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin tips from yandextank.plugins.TipsAndTricks
+2016-08-31 05:30:19,138 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcassert from yandextank.plugins.RCAssert
+2016-08-31 05:30:19,138 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin bfg from yandextank.plugins.Bfg
+2016-08-31 05:30:19,231 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2016-08-31 05:30:19,234 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: git
+2016-08-31 05:30:19,256 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: hg
+2016-08-31 05:30:19,287 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: svn
+2016-08-31 05:30:19,287 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: bzr
+2016-08-31 05:30:19,293 [INFO] yandextank.core.interfaces plugin.py:25	Initialized BFG
+2016-08-31 05:30:19,293 [DEBUG] yandextank.core.tankcore tankcore.py:119	Plugin instances: [<yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>, <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>, <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>, <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>, <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>, <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>, <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>, <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>, <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>]
+2016-08-31 05:30:19,294 [INFO] yandextank.core.consoleworker consoleworker.py:258	Performing test
+2016-08-31 05:30:19,294 [INFO] yandextank.core.tankcore tankcore.py:128	Configuring plugins...
+2016-08-31 05:30:19,294 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:19,294 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcheck', adding
+2016-08-31 05:30:19,295 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:19,295 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'shellexec', adding
+2016-08-31 05:30:19,298 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:19,298 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'aggregator', adding
+2016-08-31 05:30:19,299 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:19,299 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:30:19,299 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'autostop', adding
+2016-08-31 05:30:19,300 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:19,300 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2016-08-31 05:30:19,301 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:19,301 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'console', adding
+2016-08-31 05:30:19,302 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:30:19,302 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,302 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'tips', adding
+2016-08-31 05:30:19,303 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:19,303 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcassert', adding
+2016-08-31 05:30:19,304 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:19,304 [INFO] yandextank.core.interfaces plugin.py:46	Configuring BFG...
+2016-08-31 05:30:19,304 [INFO] yandextank.stepper.main main.py:136	Configuring StepperWrapper...
+2016-08-31 05:30:19,304 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammofile = load_test_ammo.log
+2016-08-31 05:30:19,304 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_type = caseline
+2016-08-31 05:30:19,305 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.loop = -1
+2016-08-31 05:30:19,305 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_limit = -1
+2016-08-31 05:30:19,305 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.rps_schedule = line(1,10,10m)
+2016-08-31 05:30:19,305 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances_schedule = 
+2016-08-31 05:30:19,305 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances = 1
+2016-08-31 05:30:19,306 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.uris = 
+2016-08-31 05:30:19,306 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.headers = 
+2016-08-31 05:30:19,306 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.header_http = 1.0
+2016-08-31 05:30:19,306 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.autocases = 0
+2016-08-31 05:30:19,307 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.enum_ammo = False
+2016-08-31 05:30:19,307 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.use_caching = 1
+2016-08-31 05:30:19,307 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.file_cache = 8192
+2016-08-31 05:30:19,308 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.force_stepping = 0
+2016-08-31 05:30:19,308 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.stpd_file = 
+2016-08-31 05:30:19,309 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.chosen_cases = 
+2016-08-31 05:30:19,309 [INFO] yandextank.core.tankcore tankcore.py:140	Preparing test...
+2016-08-31 05:30:19,309 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:19,309 [INFO] yandextank.core.interfaces plugin.py:37	Checking tank resources...
+2016-08-31 05:30:19,309 [DEBUG] yandextank.core.util util.py:422	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs logs | tail -n 1 | awk '{print \$4}' "
+2016-08-31 05:30:19,391 [DEBUG] yandextank.core.util util.py:444	Process output:
+181888
+
+2016-08-31 05:30:19,392 [DEBUG] yandextank.core.util util.py:446	Process exit code: 0
+2016-08-31 05:30:19,393 [DEBUG] root plugin.py:56	Result: (0, '181888\n', '')
+2016-08-31 05:30:19,394 [DEBUG] yandextank.core.interfaces plugin.py:62	Disk free space: 181888/2048
+2016-08-31 05:30:19,394 [DEBUG] yandextank.core.interfaces plugin.py:72	Memory free: 2632/512
+2016-08-31 05:30:19,394 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.interfaces plugin.py:81	Criterion objects: {}
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Phantom.plugin.Plugin'>
+2016-08-31 05:30:19,395 [DEBUG] yandextank.plugins.Monitoring.plugin plugin.py:103	Phantom plugin not found: "Requested plugin type not found: <class 'yandextank.plugins.Phantom.plugin.Plugin'>"
+2016-08-31 05:30:19,395 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:113	Monitoring has been disabled
+2016-08-31 05:30:19,396 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:19,396 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,396 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:30:19,396 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:19,396 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:19,396 [INFO] yandextank.core.interfaces plugin.py:51	Installing with PIP: []
+2016-08-31 05:30:19,396 [INFO] yandextank.core.interfaces plugin.py:58	BFG using ammo type caseline
+2016-08-31 05:30:19,397 [DEBUG] yandextank.stepper.main main.py:254	stpd-hash source: cache version 6||-1|-1|line(1,10,10m)|0|||1.0||False|caseline|/var/loadtest/load_test_ammo.log;33204;1313845;2067;1;1000;1000;22;1472621318.63
+2016-08-31 05:30:19,397 [DEBUG] yandextank.stepper.main main.py:263	Generated cache file name: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:30:19,402 [INFO] yandextank.stepper.main main.py:200	Using cached stpd-file: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.main main.py:270	Reading cached stepper info: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd_si.json
+2016-08-31 05:30:19,403 [INFO] yandextank.stepper.main main.py:205	rps_schedule is set. Overriding cached instances param from config: 1
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.info info.py:43	Published [u'line(1,10,10m)'] to loadscheme
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.info info.py:43	Published 3299 to loop_count
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.info info.py:43	Published [[1, 67], [2, 67], [3, 66], [4, 67], [5, 67], [6, 66], [7, 67], [8, 67], [9, 66], [10, 1]] to steps
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.info info.py:43	Published 600 to duration
+2016-08-31 05:30:19,403 [DEBUG] yandextank.stepper.info info.py:43	Published 1 to instances
+2016-08-31 05:30:19,408 [INFO] yandextank.plugins.Bfg.worker worker.py:26	
+BFG using stpd from logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+Instances: 1
+Gun: UltimateGun
+
+2016-08-31 05:30:19,416 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:30:19,417 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:30:19,417 [INFO] yandextank.core.interfaces plugin.py:98	Prepared BFG
+2016-08-31 05:30:19,417 [INFO] yandextank.core.tankcore tankcore.py:150	Starting test...
+2016-08-31 05:30:19,417 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:19,417 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:19,418 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:19,418 [INFO] yandextank.core.interfaces plugin.py:101	Starting BFG
+2016-08-31 05:30:19,420 [INFO] yandextank.core.tankcore tankcore.py:163	Waiting for test to finish...
+2016-08-31 05:30:19,420 [INFO] yandextank.stepper.format format.py:27	Loading stepped missiles from 'logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd'
+2016-08-31 05:30:19,420 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:19,421 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:19,421 [DEBUG] yandextank.core.util util.py:422	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs logs | tail -n 1 | awk '{print \$4}' "
+2016-08-31 05:30:19,421 [DEBUG] yandextank.plugins.Bfg.worker worker.py:121	Init shooter process
+2016-08-31 05:30:19,422 [INFO] scenario_1472621419 scenario.py:80	Setting up LoadTest: GetClientBook
+2016-08-31 05:30:19,422 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,496 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:19,496 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,506 [DEBUG] yandextank.core.util util.py:444	Process output:
+181888
+
+2016-08-31 05:30:19,506 [DEBUG] yandextank.core.util util.py:446	Process exit code: 0
+2016-08-31 05:30:19,507 [DEBUG] root plugin.py:56	Result: (0, '181888\n', '')
+2016-08-31 05:30:19,507 [DEBUG] yandextank.core.interfaces plugin.py:62	Disk free space: 181888/2048
+2016-08-31 05:30:19,507 [DEBUG] yandextank.core.interfaces plugin.py:72	Memory free: 2625/512
+2016-08-31 05:30:19,507 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:19,507 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:19,507 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:19,507 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621419]
+2016-08-31 05:30:19,507 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[]
+2016-08-31 05:30:19,508 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:19,508 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:19,508 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:19,508 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,509 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:19,510 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:19,510 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,510 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:19,510 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:19,510 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.0897610187531
+2016-08-31 05:30:19,511 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:19,511 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:19,544 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:19,544 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,617 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:19,618 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,667 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:19,667 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,729 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:19,729 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,782 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:19,782 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,826 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:19,827 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,870 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:19,870 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,921 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:19,922 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:19,922 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:19,922 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:19,922 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:19,922 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:19,922 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:19,922 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419]
+2016-08-31 05:30:19,922 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:19,922 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:19,923 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:19,923 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:19,924 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:19,924 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:19,924 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:19,925 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:19,925 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00330996513367
+2016-08-31 05:30:19,925 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:19,926 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:19,927 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:19,970 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:19,970 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,211 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:20,212 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,353 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:20,353 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,411 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:20,412 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,426 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:20,427 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:20,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:20,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:20,428 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:20,428 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621420]
+2016-08-31 05:30:20,428 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:20,428 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419]
+2016-08-31 05:30:20,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:20,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:20,429 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:20,429 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:20,430 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:20,430 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:20,430 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:20,430 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:20,430 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00408697128296
+2016-08-31 05:30:20,430 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:20,458 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:20,458 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,504 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:20,504 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,552 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:20,553 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,600 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:20,601 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,650 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:20,650 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,699 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:20,699 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,749 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:20,750 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,801 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:20,802 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,852 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:20,852 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,903 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:20,903 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,927 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:20,927 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:20,927 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:20,927 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:20,927 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:20,927 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:20,927 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419, 1472621420]
+2016-08-31 05:30:20,928 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:20,928 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:20,929 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:20,929 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:20,929 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:20,929 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:20,929 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:20,929 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00242209434509
+2016-08-31 05:30:20,930 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:20,949 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:20,949 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:20,992 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:20,992 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,037 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:21,037 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,082 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:21,082 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,126 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:21,126 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,170 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:21,171 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,214 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:21,389 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:21,428 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:21,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:21,428 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:21,428 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621421]
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419, 1472621420]
+2016-08-31 05:30:21,429 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:21,429 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:21,429 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:21,429 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:21,430 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:21,430 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:21,430 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:21,430 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:21,430 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:21,431 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:21,431 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00297999382019
+2016-08-31 05:30:21,436 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:21,437 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,438 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:21,484 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:21,484 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,530 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:21,531 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,590 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:21,591 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,643 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:21,643 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,705 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:21,705 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,754 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:21,754 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,803 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:21,803 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,853 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:21,854 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,904 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:21,904 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:21,935 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419, 1472621420, 1472621421]
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:21,936 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:21,937 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:21,937 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:21,938 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:21,938 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:21,938 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:21,938 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00248217582703
+2016-08-31 05:30:21,938 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:21,954 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:21,954 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,007 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:22,007 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,056 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:22,056 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,102 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:22,102 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,323 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:22,354 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,398 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:22,398 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,436 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:22,436 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:22,437 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:22,437 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:22,437 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:22,437 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621422]
+2016-08-31 05:30:22,437 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:22,437 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419, 1472621420, 1472621421]
+2016-08-31 05:30:22,437 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:22,437 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:22,437 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:22,437 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:22,438 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:22,438 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:22,439 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:22,439 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:22,439 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00266098976135
+2016-08-31 05:30:22,443 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:22,444 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:22,445 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,476 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 26.73ms
+2016-08-31 05:30:22,489 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:22,489 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,533 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:22,533 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,679 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:22,679 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,721 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:22,721 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,764 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:22,765 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,809 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:22,809 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,852 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:22,852 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,896 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:22,897 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,941 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:22,941 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:22,941 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:22,941 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:22,941 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:22,941 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621419]
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621419, 1472621420, 1472621421, 1472621422]
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 10}
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 10})
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 10}
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 10})
+2016-08-31 05:30:22,942 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:22,942 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:22,942 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:22,942 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:22,943 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:22,943 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:22,943 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:22,943 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:22,943 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:22,944 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:22,944 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:22,944 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:22,944 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:22,944 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:22,944 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.0033061504364
+2016-08-31 05:30:22,945 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:22,986 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:22,986 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,033 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:23,033 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,075 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:23,076 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,118 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:23,305 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,350 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:23,351 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,395 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:23,395 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,438 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:23,439 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,442 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:23,442 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:23,442 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:23,442 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621423]
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621420, 1472621421, 1472621422]
+2016-08-31 05:30:23,443 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:23,443 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:23,443 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:23,443 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:23,444 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:23,444 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:23,444 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:23,444 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:23,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:23,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:23,445 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:23,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:23,445 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00310897827148
+2016-08-31 05:30:23,445 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:23,484 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:23,485 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,525 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 38.34ms
+2016-08-31 05:30:23,532 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:23,532 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,579 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:23,579 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,629 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:23,629 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,674 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:23,674 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,718 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:23,718 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,762 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:23,762 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,806 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:23,807 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,852 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:23,852 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,898 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:23,898 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,943 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:23,943 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:23,943 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:23,943 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:23,943 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621420]
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621420, 1472621421, 1472621422, 1472621423]
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 25})
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:30:23,944 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 25})
+2016-08-31 05:30:23,944 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:23,944 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:23,945 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:23,945 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:23,946 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:23,946 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:23,946 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:23,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:23,946 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:23,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:23,947 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:23,947 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00385904312134
+2016-08-31 05:30:23,947 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:23,991 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:24,244 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,291 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:24,291 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,335 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:24,336 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,381 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:24,382 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,428 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:24,428 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,444 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:24,444 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:24,444 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:24,444 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:24,444 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:24,444 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621424]
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621421, 1472621422, 1472621423]
+2016-08-31 05:30:24,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:24,445 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:24,446 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:24,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:24,447 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:24,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:24,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:24,447 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00310492515564
+2016-08-31 05:30:24,447 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:24,475 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:24,476 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,522 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:24,522 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,567 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:24,568 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,572 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 35.74ms
+2016-08-31 05:30:24,614 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:24,614 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,662 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:24,663 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,711 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:24,711 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,759 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:24,759 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,808 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:24,809 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,860 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:24,861 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,913 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:24,913 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:24,945 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:24,945 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:24,945 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:24,945 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:24,945 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621421]
+2016-08-31 05:30:24,945 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:24,945 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621421, 1472621422, 1472621423, 1472621424]
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 16}
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 41})
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 16}
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 41})
+2016-08-31 05:30:24,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:24,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:24,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:24,946 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:24,947 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:24,947 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:24,947 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:24,947 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:24,948 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:24,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:24,948 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:24,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:24,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:24,948 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00372505187988
+2016-08-31 05:30:24,949 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:24,966 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:25,170 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,224 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:25,224 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,279 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:25,279 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,332 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:25,333 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,385 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:25,385 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,438 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:25,438 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,446 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:25,446 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:25,446 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:25,446 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:25,446 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:25,446 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621425]
+2016-08-31 05:30:25,446 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:25,446 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621422, 1472621423, 1472621424]
+2016-08-31 05:30:25,446 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:25,447 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:25,448 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:25,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:25,448 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:25,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:25,449 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:25,449 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00309610366821
+2016-08-31 05:30:25,449 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:25,482 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:25,483 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,526 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:25,527 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,571 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:25,572 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,615 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:25,615 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,620 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 39.12ms
+2016-08-31 05:30:25,661 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:25,661 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,707 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:25,707 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,757 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:25,757 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,807 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:25,807 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,855 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:25,856 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:25,903 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:25,946 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:25,947 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:25,947 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:25,947 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621422]
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621422, 1472621423, 1472621424, 1472621425]
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 16}
+2016-08-31 05:30:25,947 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 57})
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 16}
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 57})
+2016-08-31 05:30:25,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:25,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:25,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:25,948 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:25,949 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:25,949 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:25,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:25,950 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:25,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:25,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:25,950 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00365781784058
+2016-08-31 05:30:25,950 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:26,085 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,137 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:26,138 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,186 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:26,186 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,237 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:26,238 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,288 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:26,288 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,338 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:26,338 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,390 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:26,391 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,444 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:26,444 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:26,447 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:26,447 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621426]
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621423, 1472621424, 1472621425]
+2016-08-31 05:30:26,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:26,448 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:26,449 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:26,449 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:26,450 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:26,450 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:26,451 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:26,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:26,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:26,451 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00378704071045
+2016-08-31 05:30:26,451 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:26,498 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:26,498 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,553 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:26,553 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,607 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:26,608 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,652 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:26,652 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,667 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 36.61ms
+2016-08-31 05:30:26,693 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:26,693 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,732 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:26,733 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,773 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:26,773 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:26,813 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:26,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:26,948 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:26,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:26,948 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621423]
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621423, 1472621424, 1472621425, 1472621426]
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 18}
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 75})
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 18}
+2016-08-31 05:30:26,949 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 75})
+2016-08-31 05:30:26,949 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:26,949 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:26,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:26,950 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:26,951 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:26,951 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:26,951 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:26,951 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:26,952 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:26,952 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00381898880005
+2016-08-31 05:30:26,952 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:26,989 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,032 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:27,033 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,078 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:27,079 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,127 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:27,127 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,180 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:27,180 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,233 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:27,234 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,280 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:27,280 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,323 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:27,324 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,366 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:27,367 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,410 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:27,410 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,449 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:27,449 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:27,449 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:27,449 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:27,449 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621427]
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621424, 1472621425, 1472621426]
+2016-08-31 05:30:27,450 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:27,450 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:27,450 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:27,450 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:27,451 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:27,451 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:27,452 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:27,452 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:27,452 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:27,452 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:27,452 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00328397750854
+2016-08-31 05:30:27,452 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:27,454 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:27,454 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,497 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:27,498 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,541 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:27,541 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,586 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:27,587 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,630 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:27,630 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,674 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:27,714 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 35.10ms
+2016-08-31 05:30:27,881 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,926 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:30:27,926 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:27,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:27,950 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:27,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:27,950 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:27,950 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621424]
+2016-08-31 05:30:27,950 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621424, 1472621425, 1472621426, 1472621427]
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 90})
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 90})
+2016-08-31 05:30:27,951 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:27,951 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:27,951 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:27,951 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:27,952 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:27,953 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:27,953 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:27,953 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:27,953 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:27,953 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:27,954 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00370502471924
+2016-08-31 05:30:27,954 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:27,971 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:30:27,972 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,016 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:30:28,016 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,060 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:30:28,061 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,102 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:30:28,103 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,146 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:30:28,146 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,190 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:30:28,190 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,238 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:30:28,239 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,284 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:30:28,284 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,324 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:30:28,324 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,368 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:30:28,368 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,410 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:30:28,410 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:28,451 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:30:28,451 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621428]
+2016-08-31 05:30:28,451 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:28,451 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621425, 1472621426, 1472621427]
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:28,451 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f2ad3571950>
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f2ad37b5d10>
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:28,452 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:30:28,453 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:30:28,453 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:28,453 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:30:28,453 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:28,454 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:28,454 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00347995758057
+2016-08-31 05:30:28,454 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:30:28,455 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:30:28,455 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,504 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:30:28,505 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,550 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:30:28,759 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 35.13ms
+2016-08-31 05:30:28,764 [INFO] scenario_1472621419 scenario.py:61	Shoot get_book user: my-case1-ammo
+2016-08-31 05:30:28,788 [INFO] yandextank.core.consoleworker consoleworker.py:283	Do not press Ctrl+C again, the test will be broken otherwise
+2016-08-31 05:30:28,788 [INFO] scenario_1472621419 scenario.py:84	Tearing down LoadTest
+2016-08-31 05:30:28,788 [DEBUG] yandextank.plugins.Bfg.worker worker.py:164	Exit shooter process
+2016-08-31 05:30:28,788 [DEBUG] yandextank.core.consoleworker consoleworker.py:288	Caught KeyboardInterrupt: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 276, in perform_test
+    retcode = self.core.wait_for_finish()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 183, in wait_for_finish
+    time.sleep(0.5 - diff)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 64, in signal_handler
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+2016-08-31 05:30:28,789 [INFO] yandextank.core.consoleworker consoleworker.py:248	Trying to shutdown gracefully...
+2016-08-31 05:30:28,789 [INFO] yandextank.core.tankcore tankcore.py:188	Finishing test...
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:28,789 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:29,798 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 34.33ms
+2016-08-31 05:30:29,837 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 35.27ms
+2016-08-31 05:30:29,871 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 31.23ms
+2016-08-31 05:30:30,429 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472621425, 1472621426, 1472621427, 1472621428]
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472621429]
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472621425, 1472621426, 1472621427, 1472621428]
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 105})
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:30:30,430 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 105})
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 120})
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 120})
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 17}
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 137})
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 17}
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 137})
+2016-08-31 05:30:30,431 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 13}
+2016-08-31 05:30:30,432 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 150})
+2016-08-31 05:30:30,432 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 13}
+2016-08-31 05:30:30,432 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 150})
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:30,432 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,432 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:158	Finishing monitoring
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:30,433 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:30:30,433 [INFO] yandextank.core.interfaces plugin.py:114	Terminating BFG
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:30:30,434 [INFO] yandextank.core.tankcore tankcore.py:212	Post-processing test...
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,434 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:30,435 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:30:30,436 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:30:30,436 [DEBUG] yandextank.core.tankcore tankcore.py:251	Collecting artifacts
+2016-08-31 05:30:30,437 [INFO] yandextank.core.tankcore tankcore.py:264	Artifacts dir: logs/2016-08-31_05-30-30.UdxhMQ
+2016-08-31 05:30:30,437 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: tank.log to logs/2016-08-31_05-30-30.UdxhMQ/tank.log
+2016-08-31 05:30:30,437 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/lock/lunapark_BbeuXc.lock to logs/2016-08-31_05-30-30.UdxhMQ/lunapark_BbeuXc.lock
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/loadtest/load.ini to logs/2016-08-31_05-30-30.UdxhMQ/load.ini
+2016-08-31 05:30:30,438 [INFO] yandextank.core.consoleworker consoleworker.py:251	Done graceful shutdown
+2016-08-31 05:30:30,438 [INFO] yandextank.core.tankcore tankcore.py:450	Close allocated resources...
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f2ae31f5450>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f2ae320d550>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f2ae320dc10>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f2ad4cc4d10>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f2ad4a608d0>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Console.plugin.Plugin object at 0x7f2ad47e07d0>
+2016-08-31 05:30:30,438 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f2ad47e0950>
+2016-08-31 05:30:30,439 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f2ad47e0bd0>
+2016-08-31 05:30:30,439 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f2ad47e0c50>
+2016-08-31 05:30:30,439 [INFO] yandextank.core.consoleworker consoleworker.py:309	Done performing test with code 1

@@ -1,0 +1,1337 @@
+2016-08-31 05:54:51,551 [WARNING] yandextank.core.consoleworker consoleworker.py:164	/etc/yandex-tank is not accessible to get configs list
+2016-08-31 05:54:51,551 [INFO] yandextank.core.consoleworker consoleworker.py:199	No config passed via cmdline, using ./load.ini
+2016-08-31 05:54:51,551 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=True): /var/loadtest/load.ini
+2016-08-31 05:54:51,551 [INFO] yandextank.core.tankcore tankcore.py:59	Loading configs...
+2016-08-31 05:54:51,551 [DEBUG] yandextank.core.tankcore tankcore.py:472	Reading configs: ['/usr/local/lib/python2.7/dist-packages/yandextank/core/config/00-base.ini', '/root/.yandex-tank', '/var/loadtest/load.ini']
+2016-08-31 05:54:51,552 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: '' options:
+[('uuid', '637baf02-80a4-4b2a-a42e-da3583ee41d6'), ('pid', '1'), ('lock_dir', '/var/lock'), ('plugin_rcheck', 'yandextank.plugins.ResourceCheck'), ('plugin_shellexec', 'yandextank.plugins.ShellExec'), ('plugin_phantom', ''), ('plugin_aggregate', 'yandextank.plugins.Aggregator'), ('plugin_autostop', 'yandextank.plugins.Autostop'), ('plugin_monitoring', 'yandextank.plugins.Monitoring'), ('plugin_console', 'yandextank.plugins.Console'), ('plugin_tips', 'yandextank.plugins.TipsAndTricks'), ('plugin_rcassert', 'yandextank.plugins.RCAssert'), ('artifacts_base_dir', 'logs'), ('plugin_bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:54:51,552 [DEBUG] yandextank.core.tankcore tankcore.py:362	Adding artifact file to collect (keep=False): /var/lock/lunapark_SHWu1Z.lock
+2016-08-31 05:54:51,553 [INFO] yandextank.core.tankcore tankcore.py:78	Loading plugins...
+2016-08-31 05:54:51,553 [DEBUG] yandextank.core.tankcore tankcore.py:502	Section: [tank] prefix: 'plugin_' options:
+[('rcheck', 'yandextank.plugins.ResourceCheck'), ('shellexec', 'yandextank.plugins.ShellExec'), ('phantom', ''), ('aggregate', 'yandextank.plugins.Aggregator'), ('autostop', 'yandextank.plugins.Autostop'), ('monitoring', 'yandextank.plugins.Monitoring'), ('console', 'yandextank.plugins.Console'), ('tips', 'yandextank.plugins.TipsAndTricks'), ('rcassert', 'yandextank.plugins.RCAssert'), ('bfg', 'yandextank.plugins.Bfg')]
+2016-08-31 05:54:51,554 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2016-08-31 05:54:51,554 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin shellexec from yandextank.plugins.ShellExec
+2016-08-31 05:54:51,555 [DEBUG] yandextank.core.tankcore tankcore.py:92	Seems the plugin 'phantom' was disabled
+2016-08-31 05:54:51,555 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin aggregate from yandextank.plugins.Aggregator
+2016-08-31 05:54:51,742 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin autostop from yandextank.plugins.Autostop
+2016-08-31 05:54:51,745 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin monitoring from yandextank.plugins.Monitoring
+2016-08-31 05:54:51,756 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin console from yandextank.plugins.Console
+2016-08-31 05:54:51,757 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin tips from yandextank.plugins.TipsAndTricks
+2016-08-31 05:54:51,757 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin rcassert from yandextank.plugins.RCAssert
+2016-08-31 05:54:51,757 [DEBUG] yandextank.core.tankcore tankcore.py:95	Loading plugin bfg from yandextank.plugins.Bfg
+2016-08-31 05:54:51,859 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2016-08-31 05:54:51,860 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: git
+2016-08-31 05:54:51,885 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: hg
+2016-08-31 05:54:51,924 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: svn
+2016-08-31 05:54:51,924 [DEBUG] pip.vcs __init__.py:59	Registered VCS backend: bzr
+2016-08-31 05:54:51,930 [INFO] yandextank.core.interfaces plugin.py:25	Initialized BFG
+2016-08-31 05:54:51,931 [DEBUG] yandextank.core.tankcore tankcore.py:119	Plugin instances: [<yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>, <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>, <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>, <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>, <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>, <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>, <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>, <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>, <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>]
+2016-08-31 05:54:51,931 [INFO] yandextank.core.consoleworker consoleworker.py:258	Performing test
+2016-08-31 05:54:51,931 [INFO] yandextank.core.tankcore tankcore.py:128	Configuring plugins...
+2016-08-31 05:54:51,931 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:51,931 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcheck', adding
+2016-08-31 05:54:51,932 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:51,933 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'shellexec', adding
+2016-08-31 05:54:51,934 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:51,934 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'aggregator', adding
+2016-08-31 05:54:51,934 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:51,935 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:54:51,935 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'autostop', adding
+2016-08-31 05:54:51,935 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:51,936 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2016-08-31 05:54:51,936 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:51,936 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'console', adding
+2016-08-31 05:54:51,937 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:54:51,938 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:51,938 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'tips', adding
+2016-08-31 05:54:51,938 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:51,938 [DEBUG] yandextank.core.tankcore tankcore.py:276	No section 'rcassert', adding
+2016-08-31 05:54:51,939 [DEBUG] yandextank.core.tankcore tankcore.py:132	Configuring <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:51,939 [INFO] yandextank.core.interfaces plugin.py:46	Configuring BFG...
+2016-08-31 05:54:51,939 [INFO] yandextank.stepper.main main.py:136	Configuring StepperWrapper...
+2016-08-31 05:54:51,940 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammofile = load_test_ammo.log
+2016-08-31 05:54:51,940 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_type = caseline
+2016-08-31 05:54:51,940 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.loop = -1
+2016-08-31 05:54:51,940 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.ammo_limit = -1
+2016-08-31 05:54:51,940 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.rps_schedule = line(1,10,10m)
+2016-08-31 05:54:51,941 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances_schedule = 
+2016-08-31 05:54:51,941 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.instances = 1
+2016-08-31 05:54:51,941 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.uris = 
+2016-08-31 05:54:51,941 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.headers = 
+2016-08-31 05:54:51,942 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.header_http = 1.0
+2016-08-31 05:54:51,942 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.autocases = 0
+2016-08-31 05:54:51,942 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.enum_ammo = False
+2016-08-31 05:54:51,942 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.use_caching = 1
+2016-08-31 05:54:51,943 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.file_cache = 8192
+2016-08-31 05:54:51,943 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.force_stepping = 0
+2016-08-31 05:54:51,943 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.stpd_file = 
+2016-08-31 05:54:51,944 [DEBUG] yandextank.stepper.main main.py:120	Option bfg.chosen_cases = 
+2016-08-31 05:54:51,944 [INFO] yandextank.core.tankcore tankcore.py:140	Preparing test...
+2016-08-31 05:54:51,944 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:51,944 [INFO] yandextank.core.interfaces plugin.py:37	Checking tank resources...
+2016-08-31 05:54:51,944 [DEBUG] yandextank.core.util util.py:422	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs logs | tail -n 1 | awk '{print \$4}' "
+2016-08-31 05:54:52,027 [DEBUG] yandextank.core.util util.py:444	Process output:
+181887
+
+2016-08-31 05:54:52,027 [DEBUG] yandextank.core.util util.py:446	Process exit code: 0
+2016-08-31 05:54:52,028 [DEBUG] root plugin.py:56	Result: (0, '181887\n', '')
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.interfaces plugin.py:62	Disk free space: 181887/2048
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.interfaces plugin.py:72	Memory free: 2486/512
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.interfaces plugin.py:81	Criterion objects: {}
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:54:52,029 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Phantom.plugin.Plugin'>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.plugins.Monitoring.plugin plugin.py:103	Phantom plugin not found: "Requested plugin type not found: <class 'yandextank.plugins.Phantom.plugin.Plugin'>"
+2016-08-31 05:54:52,030 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:113	Monitoring has been disabled
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:52,030 [DEBUG] yandextank.core.tankcore tankcore.py:143	Preparing <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:52,031 [INFO] yandextank.core.interfaces plugin.py:51	Installing with PIP: []
+2016-08-31 05:54:52,031 [INFO] yandextank.core.interfaces plugin.py:58	BFG using ammo type caseline
+2016-08-31 05:54:52,031 [DEBUG] yandextank.stepper.main main.py:254	stpd-hash source: cache version 6||-1|-1|line(1,10,10m)|0|||1.0||False|caseline|/var/loadtest/load_test_ammo.log;33204;1313845;2067;1;1000;1000;22;1472621318.63
+2016-08-31 05:54:52,031 [DEBUG] yandextank.stepper.main main.py:263	Generated cache file name: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:54:52,031 [INFO] yandextank.stepper.main main.py:200	Using cached stpd-file: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.main main.py:270	Reading cached stepper info: logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd_si.json
+2016-08-31 05:54:52,032 [INFO] yandextank.stepper.main main.py:205	rps_schedule is set. Overriding cached instances param from config: 1
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.info info.py:43	Published [u'line(1,10,10m)'] to loadscheme
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.info info.py:43	Published 3299 to loop_count
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.info info.py:43	Published [[1, 67], [2, 67], [3, 66], [4, 67], [5, 67], [6, 66], [7, 67], [8, 67], [9, 66], [10, 1]] to steps
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.info info.py:43	Published 600 to duration
+2016-08-31 05:54:52,032 [DEBUG] yandextank.stepper.info info.py:43	Published 1 to instances
+2016-08-31 05:54:52,034 [INFO] yandextank.plugins.Bfg.worker worker.py:26	
+BFG using stpd from logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd
+Instances: 1
+Gun: UltimateGun
+
+2016-08-31 05:54:52,038 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Aggregator.plugin.Plugin'>
+2016-08-31 05:54:52,038 [DEBUG] yandextank.core.tankcore tankcore.py:316	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2016-08-31 05:54:52,038 [INFO] yandextank.core.interfaces plugin.py:98	Prepared BFG
+2016-08-31 05:54:52,038 [INFO] yandextank.core.tankcore tankcore.py:150	Starting test...
+2016-08-31 05:54:52,039 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:52,039 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:52,039 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:52,039 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:52,040 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:52,040 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:52,040 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,040 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:52,040 [DEBUG] yandextank.core.tankcore tankcore.py:153	Starting <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:52,040 [INFO] yandextank.core.interfaces plugin.py:101	Starting BFG
+2016-08-31 05:54:52,043 [DEBUG] yandextank.plugins.Bfg.worker worker.py:121	Init shooter process
+2016-08-31 05:54:52,043 [INFO] yandextank.core.tankcore tankcore.py:163	Waiting for test to finish...
+2016-08-31 05:54:52,043 [INFO] yandextank.stepper.format format.py:27	Loading stepped missiles from 'logs/load_test_ammo.log_0aed515e897cfc8a5c43768ae3f52944.stpd'
+2016-08-31 05:54:52,043 [INFO] scenario_1472622892 scenario.py:88	Setting up LoadTest: GetClientBook
+2016-08-31 05:54:52,044 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:52,044 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:52,044 [DEBUG] yandextank.core.util util.py:422	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs logs | tail -n 1 | awk '{print \$4}' "
+2016-08-31 05:54:52,046 [INFO] scenario_1472622892 scenario.py:61	Get login list: ['jandekspervyi1@extremail.ru', 'jandekspervyi2@extremail.ru', 'jandekspervyi3@extremail.ru', 'jandekspervyi4@extremail.ru', 'jandekspervyi5@extremail.ru', 'jandekspervyi6@extremail.ru', 'jandekspervyi7@extremail.ru', 'jandekspervyi8@extremail.ru', 'jandekspervyi9@extremail.ru', 'jandekspervyi10@extremail.ru', 'jandekspervyi11@extremail.ru', 'jandekspervyi12@extremail.ru', 'jandekspervyi13@extremail.ru', 'jandekspervyi14@extremail.ru', 'jandekspervyi15@extremail.ru']
+2016-08-31 05:54:52,046 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,099 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,099 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:54:52,099 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.util util.py:444	Process output:
+181887
+
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.util util.py:446	Process exit code: 0
+2016-08-31 05:54:52,129 [DEBUG] root plugin.py:56	Result: (0, '181887\n', '')
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.interfaces plugin.py:62	Disk free space: 181887/2048
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.interfaces plugin.py:72	Memory free: 2480/512
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:52,129 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622892]
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[]
+2016-08-31 05:54:52,130 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:52,130 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:52,130 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:52,130 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:52,131 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:52,131 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:52,131 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,132 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:52,132 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:52,132 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:52,132 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,132 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:52,132 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:52,133 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.0890510082245
+2016-08-31 05:54:52,133 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:52,148 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,148 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:54:52,149 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,196 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,196 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:54:52,196 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,243 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,243 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:54:52,243 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,291 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,291 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:54:52,291 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,337 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,337 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:54:52,337 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,386 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,387 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:54:52,387 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,434 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,434 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:54:52,434 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,483 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,483 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:54:52,484 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,545 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:52,545 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:52,545 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:52,545 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:52,545 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:52,545 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:54:52,545 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:52,545 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892]
+2016-08-31 05:54:52,545 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,546 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:52,547 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:52,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:52,547 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:52,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:52,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:52,547 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00269794464111
+2016-08-31 05:54:52,548 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:52,744 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,744 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:54:52,744 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,790 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,790 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:54:52,790 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,833 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,833 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:54:52,833 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,876 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,876 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:54:52,876 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,921 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,921 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:54:52,921 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:52,968 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:52,968 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:54:53,033 [INFO] scenario_1472622892 scenario.py:61	Get login list: ['jandekspervyi1@extremail.ru', 'jandekspervyi2@extremail.ru', 'jandekspervyi3@extremail.ru', 'jandekspervyi4@extremail.ru', 'jandekspervyi5@extremail.ru', 'jandekspervyi6@extremail.ru', 'jandekspervyi7@extremail.ru', 'jandekspervyi8@extremail.ru', 'jandekspervyi9@extremail.ru', 'jandekspervyi10@extremail.ru', 'jandekspervyi11@extremail.ru', 'jandekspervyi12@extremail.ru', 'jandekspervyi13@extremail.ru', 'jandekspervyi14@extremail.ru', 'jandekspervyi15@extremail.ru']
+2016-08-31 05:54:53,033 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,046 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:53,048 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:53,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:53,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:53,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:53,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622893]
+2016-08-31 05:54:53,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:53,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892]
+2016-08-31 05:54:53,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:53,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:53,049 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:53,049 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:53,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:53,050 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:53,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:53,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:53,050 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00414299964905
+2016-08-31 05:54:53,050 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:53,075 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,075 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:54:53,076 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,119 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,119 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:54:53,119 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,163 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,163 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:54:53,163 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,207 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,207 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:54:53,207 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,250 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,250 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:54:53,251 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,293 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,294 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:54:53,294 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,335 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,335 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:54:53,335 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,381 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,381 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:54:53,381 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,424 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,424 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:54:53,424 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,467 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,468 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:54:53,468 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,513 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,514 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:54:53,514 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:53,547 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:53,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:53,547 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:53,547 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:53,547 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:54:53,547 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892, 1472622893]
+2016-08-31 05:54:53,548 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:53,548 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:53,549 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:53,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:53,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:53,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:53,549 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00245189666748
+2016-08-31 05:54:53,549 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:53,549 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:53,558 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,558 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:54:53,558 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,603 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,603 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:54:53,604 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,647 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,648 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:54:53,648 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:53,694 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:53,694 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:54:54,011 [INFO] scenario_1472622892 scenario.py:61	Get login list: ['jandekspervyi1@extremail.ru', 'jandekspervyi2@extremail.ru', 'jandekspervyi3@extremail.ru', 'jandekspervyi4@extremail.ru', 'jandekspervyi5@extremail.ru', 'jandekspervyi6@extremail.ru', 'jandekspervyi7@extremail.ru', 'jandekspervyi8@extremail.ru', 'jandekspervyi9@extremail.ru', 'jandekspervyi10@extremail.ru', 'jandekspervyi11@extremail.ru', 'jandekspervyi12@extremail.ru', 'jandekspervyi13@extremail.ru', 'jandekspervyi14@extremail.ru', 'jandekspervyi15@extremail.ru']
+2016-08-31 05:54:54,011 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:54,048 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:54,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:54,048 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:54,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:54,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622894]
+2016-08-31 05:54:54,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:54,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892, 1472622893]
+2016-08-31 05:54:54,049 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:54,049 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:54,049 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:54,049 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:54,049 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:54,055 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:54,055 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:54,055 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:54,056 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:54,056 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:54,056 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:54,056 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:54,056 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:54,057 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:54,057 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:54,057 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00938010215759
+2016-08-31 05:54:54,057 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:54,058 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,058 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:54:54,058 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,105 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,105 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:54:54,106 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,153 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,153 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:54:54,154 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,204 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,204 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:54:54,204 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,254 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,255 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:54:54,255 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,304 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,304 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:54:54,305 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,354 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,355 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:54:54,355 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,404 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,404 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:54:54,404 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,453 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,453 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:54:54,453 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,507 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,507 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:54:54,507 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:54,549 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:54,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:54,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:54,549 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:54,549 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:54:54,549 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:54,549 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892, 1472622893, 1472622894]
+2016-08-31 05:54:54,549 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:54,550 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:54,551 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:54,551 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:54,551 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:54,551 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:54,551 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:54,551 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00268220901489
+2016-08-31 05:54:54,551 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:54,561 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,561 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:54:54,562 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,613 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,613 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:54:54,614 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,668 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,668 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:54:54,668 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,716 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,717 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:54:54,717 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:54,758 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:54,759 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:54:54,976 [INFO] scenario_1472622892 scenario.py:61	Get login list: ['jandekspervyi1@extremail.ru', 'jandekspervyi2@extremail.ru', 'jandekspervyi3@extremail.ru', 'jandekspervyi4@extremail.ru', 'jandekspervyi5@extremail.ru', 'jandekspervyi6@extremail.ru', 'jandekspervyi7@extremail.ru', 'jandekspervyi8@extremail.ru', 'jandekspervyi9@extremail.ru', 'jandekspervyi10@extremail.ru', 'jandekspervyi11@extremail.ru', 'jandekspervyi12@extremail.ru', 'jandekspervyi13@extremail.ru', 'jandekspervyi14@extremail.ru', 'jandekspervyi15@extremail.ru']
+2016-08-31 05:54:54,976 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,021 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,021 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:54:55,021 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,049 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:55,050 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:55,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:55,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:55,050 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:55,050 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622895]
+2016-08-31 05:54:55,050 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:55,050 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892, 1472622893, 1472622894]
+2016-08-31 05:54:55,050 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:55,051 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:55,052 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:55,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:55,052 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:55,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:55,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:55,052 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00278091430664
+2016-08-31 05:54:55,052 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:55,065 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,065 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:54:55,065 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,106 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 44.05ms
+2016-08-31 05:54:55,110 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,110 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:54:55,110 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,155 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,155 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:54:55,155 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,199 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,199 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:54:55,200 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,244 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,244 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:54:55,244 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,287 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,287 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:54:55,287 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,331 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,331 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:54:55,331 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,375 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,375 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:54:55,375 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,420 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,420 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:54:55,420 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,464 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,464 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:54:55,464 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,507 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,507 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:54:55,508 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,550 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:55,551 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:55,551 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:55,551 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:55,551 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472622892]
+2016-08-31 05:54:55,551 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:54:55,551 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:55,551 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622892, 1472622893, 1472622894, 1472622895]
+2016-08-31 05:54:55,552 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:54:55,552 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 15})
+2016-08-31 05:54:55,552 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:54:55,552 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 15})
+2016-08-31 05:54:55,552 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:55,552 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:55,552 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,553 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:55,553 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:55,553 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:55,553 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:55,554 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:55,555 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:55,556 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:55,556 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:55,556 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:55,556 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:55,557 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00624895095825
+2016-08-31 05:54:55,557 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:55,596 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,596 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:54:55,597 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,642 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,643 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:54:55,927 [INFO] scenario_1472622892 scenario.py:61	Get login list: ['jandekspervyi1@extremail.ru', 'jandekspervyi2@extremail.ru', 'jandekspervyi3@extremail.ru', 'jandekspervyi4@extremail.ru', 'jandekspervyi5@extremail.ru', 'jandekspervyi6@extremail.ru', 'jandekspervyi7@extremail.ru', 'jandekspervyi8@extremail.ru', 'jandekspervyi9@extremail.ru', 'jandekspervyi10@extremail.ru', 'jandekspervyi11@extremail.ru', 'jandekspervyi12@extremail.ru', 'jandekspervyi13@extremail.ru', 'jandekspervyi14@extremail.ru', 'jandekspervyi15@extremail.ru']
+2016-08-31 05:54:55,928 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:55,978 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:55,979 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:1 failed while measuring with 'access_token'
+2016-08-31 05:54:55,979 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,031 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,031 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:2 failed while measuring with 'access_token'
+2016-08-31 05:54:56,031 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,051 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:56,051 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:56,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:56,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:56,052 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[]
+2016-08-31 05:54:56,052 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622896]
+2016-08-31 05:54:56,052 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:56,052 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622893, 1472622894, 1472622895]
+2016-08-31 05:54:56,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:56,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:56,052 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:56,053 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:56,054 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:56,054 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:56,055 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:56,055 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:56,055 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:56,055 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.0037829875946
+2016-08-31 05:54:56,055 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:56,081 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,081 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:3 failed while measuring with 'access_token'
+2016-08-31 05:54:56,081 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,132 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,132 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:4 failed while measuring with 'access_token'
+2016-08-31 05:54:56,133 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,152 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 37.14ms
+2016-08-31 05:54:56,182 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,183 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:5 failed while measuring with 'access_token'
+2016-08-31 05:54:56,183 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,233 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,233 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:6 failed while measuring with 'access_token'
+2016-08-31 05:54:56,233 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,284 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,284 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:7 failed while measuring with 'access_token'
+2016-08-31 05:54:56,285 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,335 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,335 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:8 failed while measuring with 'access_token'
+2016-08-31 05:54:56,336 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,390 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,390 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:9 failed while measuring with 'access_token'
+2016-08-31 05:54:56,390 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,442 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,442 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:10 failed while measuring with 'access_token'
+2016-08-31 05:54:56,442 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,494 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,494 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:11 failed while measuring with 'access_token'
+2016-08-31 05:54:56,495 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,546 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,546 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:12 failed while measuring with 'access_token'
+2016-08-31 05:54:56,547 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,552 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:56,552 [DEBUG] yandextank.core.interfaces plugin.py:42	Checking tank resources...
+2016-08-31 05:54:56,552 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:56,552 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:56,552 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472622893]
+2016-08-31 05:54:56,552 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[]
+2016-08-31 05:54:56,552 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:56,552 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622896, 1472622893, 1472622894, 1472622895]
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 30})
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 30})
+2016-08-31 05:54:56,553 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:56,553 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:56,553 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:128	Terminal size: 180x46
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:139	Left/right panels width: 118/57
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:145	There are 3 info widgets
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #0: <yandextank.plugins.Bfg.widgets.BfgInfoWidget object at 0x7f4d3b6ab950>
+2016-08-31 05:54:56,553 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7f4d3b6e8d10>
+2016-08-31 05:54:56,554 [DEBUG] yandextank.plugins.Console.screen screen.py:148	Rendering info widget #10000: <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:56,554 [DEBUG] yandextank.plugins.Console.screen screen.py:94	Rendering left blocks
+2016-08-31 05:54:56,554 [DEBUG] yandextank.plugins.Console.screen screen.py:156	Composing final screen output
+2016-08-31 05:54:56,555 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:56,555 [DEBUG] yandextank.plugins.Console.plugin plugin.py:68	Writing console view to STDOUT
+2016-08-31 05:54:56,555 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:56,555 [DEBUG] yandextank.core.tankcore tankcore.py:171	Polling <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:56,555 [DEBUG] yandextank.core.tankcore tankcore.py:177	Polling took 0.00333690643311
+2016-08-31 05:54:56,555 [DEBUG] yandextank.core.tankcore tankcore.py:180	Tank status:
+{
+  "core": {
+    "stage": "shoot"
+  }, 
+  "stepper": {
+    "ammo_count": 3300, 
+    "instances": 1, 
+    "loadscheme": [
+      "line(1,10,10m)"
+    ], 
+    "steps": [
+      [
+        1, 
+        67
+      ], 
+      [
+        2, 
+        67
+      ], 
+      [
+        3, 
+        66
+      ], 
+      [
+        4, 
+        67
+      ], 
+      [
+        5, 
+        67
+      ], 
+      [
+        6, 
+        66
+      ], 
+      [
+        7, 
+        67
+      ], 
+      [
+        8, 
+        67
+      ], 
+      [
+        9, 
+        66
+      ], 
+      [
+        10, 
+        1
+      ]
+    ], 
+    "duration": 600, 
+    "loop_count": 3299
+  }
+}
+2016-08-31 05:54:56,601 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,601 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:13 failed while measuring with 'access_token'
+2016-08-31 05:54:56,601 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,649 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,650 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:14 failed while measuring with 'access_token'
+2016-08-31 05:54:56,650 [INFO] scenario_1472622892 scenario.py:65	Shoot get_book user: my-case1-ammo
+2016-08-31 05:54:56,693 [DEBUG] scenario_1472622892 scenario.py:71	REQUEST INFO: STATUS-CODE: 401, JSON: {u'errors': [{u'status': u'401', u'code': u'invalid_grant', u'detail': u'\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u043b\u043e\u0433\u0438\u043d, \u043f\u0430\u0440\u043e\u043b\u044c \u0438\u043b\u0438 e-mail \u043d\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d', u'title': u'Authentication failed'}]}
+2016-08-31 05:54:56,693 [WARNING] yandextank.plugins.Bfg.guns guns.py:43	get_book_user:15 failed while measuring with 'access_token'
+2016-08-31 05:54:56,715 [INFO] yandextank.core.consoleworker consoleworker.py:283	Do not press Ctrl+C again, the test will be broken otherwise
+2016-08-31 05:54:56,715 [INFO] scenario_1472622892 scenario.py:92	Tearing down LoadTest
+2016-08-31 05:54:56,716 [DEBUG] yandextank.plugins.Bfg.worker worker.py:164	Exit shooter process
+2016-08-31 05:54:56,716 [DEBUG] yandextank.core.consoleworker consoleworker.py:288	Caught KeyboardInterrupt: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 276, in perform_test
+    retcode = self.core.wait_for_finish()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 183, in wait_for_finish
+    time.sleep(0.5 - diff)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 64, in signal_handler
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+2016-08-31 05:54:56,716 [INFO] yandextank.core.consoleworker consoleworker.py:248	Trying to shutdown gracefully...
+2016-08-31 05:54:56,716 [INFO] yandextank.core.tankcore tankcore.py:188	Finishing test...
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:56,717 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:57,199 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 41.85ms
+2016-08-31 05:54:57,237 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 35.01ms
+2016-08-31 05:54:57,245 [DEBUG] yandextank.plugins.Aggregator.aggregator aggregator.py:152	Aggregation time: 6.46ms
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:97	Data timestamps:
+[1472622894, 1472622895, 1472622896]
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:98	Stats timestamps:
+[1472622897]
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:99	Data cache timestamps:
+[]
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Aggregator.plugin plugin.py:100	Stats cache timestamps:
+[1472622896, 1472622894, 1472622895]
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 15}
+2016-08-31 05:54:58,048 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 45})
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 15}
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 45})
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 16}
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 61})
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 16}
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 61})
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:309	Arrived codes data: {'500': 2}
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:317	Current codes dist: defaultdict(<type 'int'>, {'500': 63})
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:375	Arrived net codes data: {'0': 2}
+2016-08-31 05:54:58,049 [DEBUG] yandextank.plugins.Console.screen screen.py:383	Current net codes dist: defaultdict(<type 'int'>, {'0': 63})
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,050 [INFO] yandextank.plugins.Monitoring.plugin plugin.py:158	Finishing monitoring
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:58,050 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:192	Finalize <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:58,051 [DEBUG] yandextank.core.tankcore tankcore.py:194	RC before: 1
+2016-08-31 05:54:58,051 [INFO] yandextank.core.interfaces plugin.py:114	Terminating BFG
+2016-08-31 05:54:58,052 [DEBUG] yandextank.core.tankcore tankcore.py:196	RC after: 1
+2016-08-31 05:54:58,052 [INFO] yandextank.core.tankcore tankcore.py:212	Post-processing test...
+2016-08-31 05:54:58,052 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:58,052 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,052 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,052 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,053 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:58,054 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,054 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,054 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:58,054 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,054 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,055 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,056 [DEBUG] yandextank.core.tankcore tankcore.py:216	Post-process <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:58,056 [DEBUG] yandextank.core.tankcore tankcore.py:218	RC before: 1
+2016-08-31 05:54:58,056 [DEBUG] yandextank.core.tankcore tankcore.py:220	RC after: 1
+2016-08-31 05:54:58,056 [DEBUG] yandextank.core.tankcore tankcore.py:251	Collecting artifacts
+2016-08-31 05:54:58,057 [INFO] yandextank.core.tankcore tankcore.py:264	Artifacts dir: logs/2016-08-31_05-54-58.OxNdTi
+2016-08-31 05:54:58,057 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: tank.log to logs/2016-08-31_05-54-58.OxNdTi/tank.log
+2016-08-31 05:54:58,057 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/lock/lunapark_SHWu1Z.lock to logs/2016-08-31_05-54-58.OxNdTi/lunapark_SHWu1Z.lock
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:339	Collecting file: /var/loadtest/load.ini to logs/2016-08-31_05-54-58.OxNdTi/load.ini
+2016-08-31 05:54:58,058 [INFO] yandextank.core.consoleworker consoleworker.py:251	Done graceful shutdown
+2016-08-31 05:54:58,058 [INFO] yandextank.core.tankcore tankcore.py:450	Close allocated resources...
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f4d4b128450>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f4d4b140550>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Aggregator.plugin.Plugin object at 0x7f4d4b140c10>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f4d3cbf7d10>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Monitoring.plugin.Plugin object at 0x7f4d3c9938d0>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Console.plugin.Plugin object at 0x7f4d3c7137d0>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.TipsAndTricks.plugin.Plugin object at 0x7f4d3c713950>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f4d3c713bd0>
+2016-08-31 05:54:58,058 [DEBUG] yandextank.core.tankcore tankcore.py:453	Close <yandextank.plugins.Bfg.plugin.Plugin object at 0x7f4d3c713c50>
+2016-08-31 05:54:58,059 [INFO] yandextank.core.consoleworker consoleworker.py:309	Done performing test with code 1

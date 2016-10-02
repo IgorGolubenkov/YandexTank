@@ -1,0 +1,92 @@
+[tank]
+uuid = d9c17fc6-6016-429a-b0e8-defd62a91f6e
+pid = 1
+lock_dir = /var/lock
+plugin_rcheck = yandextank.plugins.ResourceCheck
+plugin_shellexec = yandextank.plugins.ShellExec
+plugin_phantom = 
+plugin_aggregate = yandextank.plugins.Aggregator
+plugin_autostop = yandextank.plugins.Autostop
+plugin_monitoring = yandextank.plugins.Monitoring
+plugin_console = yandextank.plugins.Console
+plugin_tips = yandextank.plugins.TipsAndTricks
+plugin_rcassert = yandextank.plugins.RCAssert
+artifacts_base_dir = logs
+plugin_bfg = yandextank.plugins.Bfg
+flush_config_to = 
+artifacts_dir = 
+taskset_path = taskset
+affinity = 
+
+[bfg]
+ammo_type = caseline
+instances = 1
+gun_type = ultimate
+ammofile = load_test_ammo.log
+rps_schedule = line(1,10,10m)
+loop = -1
+ammo_limit = -1
+instances_schedule = 
+uris = 
+headers = 
+header_http = 1.0
+autocases = 0
+enum_ammo = False
+use_caching = 1
+file_cache = 8192
+cache_dir = logs
+force_stepping = 0
+stpd_file = logs/load_test_ammo.log_efed14643aa8d62e525f521e24355b63.stpd
+chosen_cases = 
+pip = 
+cached_stpd = 0
+result_cache_size = 5
+
+[overload]
+api_address = https://overload.yandex.net/
+
+[monitoring]
+config = none
+default_target = localhost
+ssh_timeout = 5s
+
+[ultimate_gun]
+module_path = /var/loadtest
+module_name = scenario
+init_param = TestOne
+class_name = LoadTest
+my_var = hello
+
+[rcheck]
+interval = 10s
+disk_limit = 2048
+mem_limit = 512
+
+[shellexec]
+catch_out = False
+prepare = 
+start = 
+end = 
+poll = 
+post_process = 
+
+[aggregator]
+verbose_histogram = 0
+
+[autostop]
+autostop = 
+report_file = autostop_report.txt
+
+[console]
+info_panel_width = 33
+short_only = 0
+disable_all_colors = 0
+disable_colors = 
+
+[tips]
+disable = 0
+
+[rcassert]
+pass = 
+fail_code = 10
+

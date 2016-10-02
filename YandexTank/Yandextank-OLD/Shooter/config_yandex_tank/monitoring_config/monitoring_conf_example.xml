@@ -1,0 +1,79 @@
+<Monitoring>
+    <Host address="<IP address or domain name>" port="<SSH port>" python="<python path>" interval="<seconds>" comment="<short commentary>" username="<user name>">
+        <CPU measure="user,system,iowait"/>
+        <System measure="csw,int"/>
+        <Memory measure="free,used"/>
+        <Disk measure="read,write"/>
+        <Net measure="recv,send"/>
+    </Host>
+</Monitoring>
+
+<!---  Element Host
+
+Contains address and role of monitored server. Attributes:
+
+address=”<IP address or domain name> Server adddress. Mandatory. Special mask [target]
+could be used here, which means “get from the tank target address”
+
+port=”<SSH port>” Server’s ssh port. Optional.
+Default: 22
+
+python=”<python path>” The way to use alternative python version. Optional.
+
+interval=”<seconds>” Metrics collection interval. Optional.
+Default: 1 second
+
+comment=”<short commentary>” Short notice about server’s role in test. Optional.
+Default: empty
+
+username=”<user name>” User account to connect with. Optional.
+Default: current user account.
+
+Example: <Host address="localhost" comment="frontend" priority="1" interval="5"
+username="tank"/>
+
+ -->
+
+<!--- Metric elements
+
+Metric elements in general are set by metrics group name and particular metrics enumeration in attribute measure.
+Example: <CPU measure=”idle,user,system” />
+
+• CPU
+– idle
+– user - default
+– system - default
+– iowait - default
+– nice
+• System
+– la1 - load average 1 min
+– la5 - ...
+– la15 - ...
+– csw - context switches, default
+– int - interrupts, default
+– numproc - process amount in system
+– numthreads - threads amount in system
+• Memory
+– free - default
+– used - default
+– cached
+– buff
+• Disk
+– read - default
+– write - default
+• Net
+– recv - bytes received, default
+– send - bytes sent, default
+– tx - outgoing packet rate
+– rx - incoming packet rate
+– retransmit - retransmit amount
+– estab - number of sockets in ESTABLISHED state
+– closewait - number of sockets in CLOSEWAIT
+– timewait - number of sockets in TIMEWAIT
+• Custom
+– tail - metric value is read from file’s last line, file path is specified in node text. Example: <Custom
+measure=”tail” label=”size history”>/tmp/dbsize.log</Custom>
+– call - metric value is a command or script execution output. Example: <Custom measure=”call”
+diff=”1” label=”Base size”>du -hs /usr/mysql/data</Custom>
+
+ -->
